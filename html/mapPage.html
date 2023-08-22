@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../app/scss/mapStyle.css">
+</head>
+<body>
+    <div id="tavern">
+        <img src="../bg-pics/bg-study.jpg">
+    </div>
+    
+    <img src="../bg-pics/GameMap.jpg" usemap="#image-map" class="map">
+    <map name="image-map">
+        <area target="" alt="Skyrim" title="Skyrim" href="skyrim.html" coords="27,429,329,482" shape="rect">
+        <area target="" alt="Fallout" title="Fallout" href="fallout.html" coords="557,1330,882,1385" shape="rect">
+        <area target="" alt="TLOU" title="TLOU" href="tlou.html" coords="1347,934,1673,990" shape="rect">
+        <area target="" alt="RDR" title="RDR" href="rdr2.html" coords="848,681,1145,730" shape="rect">
+        <area target="" alt="Witcher" title="Witcher" href="witcher.html" coords="1326,236,1619,286" shape="rect">
+        <area target="" alt="Metro" title="Metro" href="metro.html" coords="1315,701,1591,748" shape="rect">
+    </map>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../image-map-resp/jquery.rwdImageMaps.min.js"></script>
+    <script>
+        $(document).ready(function(e){
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+</body>
+</html>

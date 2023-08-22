@@ -1,0 +1,76 @@
+@import "globals";
+/*
+body{
+    
+    background-image: url(backdrop.jpg);
+    background-size: 1200px 900px;
+    backdrop-filter: blur(10px);
+    
+}
+*/
+body{
+    overflow: hidden;
+}
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.disp{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome{
+    color: white;
+    font-weight:100;
+    font-size: 50px;
+    text-align: center;
+}
+
+#nameBox{
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    font-size: 50px;
+    width: 300px;
+    height: 70px;
+    background: transparent;
+    border-bottom: 2px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    padding-bottom: 10px;
+}
+
+#js{
+    color: aqua;
+}
+
+
+.center-fit{
+    max-width: 100%;
+    height: auto;
+}
+
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    font-size: 40px;
+    color: rgb(187, 177, 177);
+    background-color: transparent;
+    border: none;
+}
+
+.btn:hover{
+    color: white;
+}

@@ -1,0 +1,70 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#skyrimBody{
+    background-image: url(../../bg-pics/skyrimDispBg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#rdrBody{
+    background-image: url(../../bg-pics/rdrDispBg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#metroBody{
+    background-image: url(../../bg-pics/metroDispBg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#witcherBody{
+    background-image: url(../../bg-pics/witcherDispBg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tlouBody{
+    background-image: url(../../bg-pics/tlouDispBg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#falloutBody{
+    background-image: url(../../bg-pics/falloutDispBg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.player-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+   
+    
+}
+
+#player{
+    height: 70vh;
+    width: 75vw;
+}
+
+.spotify-container{
+    grid-area: 2/1/3/2;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+#pomodoro{
+    grid-area: 1/2/2/3;
+    object-fit: contain;
+}
+

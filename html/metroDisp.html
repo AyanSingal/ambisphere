@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link rel="stylesheet" href="../app/scss/gameDispStlye.css">
+
+    <link rel="stylesheet" href="../Pomodoro/pomoStyle.css">
+    <script src="https://kit.fontawesome.com/8425591a24.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="metroBody">
+
+    <div class="player-container">
+        <div id="player"></div>
+        <iframe class="spotify-container"
+            src="https://open.spotify.com/embed/album/48skMic15wV2zu4HAOx28s?utm_source=generator" width="60%"
+            height="170" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+
+
+        <div id="pomodoro">
+            <section>
+                <div class="container">
+
+
+                    <div class="painel">
+                        <p id="work" class="active">work</p>
+                        <p id="break">break</p>
+                    </div>
+
+                    <div class="timer">
+                        <div class="circle">
+                            <div class="time">
+                                <p id="minutes">25</p>
+                                <p>:</p>
+                                <p id="seconds">00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+                        <a id="reset" onclick="reset()"><i class="fa-solid fa-rotate-right"></i></a>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+        </div>
+    </div>
+
+
+    <script>
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                videoId: 'NsrAQUxw9g8',
+                playerVars: {
+                    'autoplay': 1,
+                    'controls': 1,
+                    'loop': 0,
+                    'listType': 'playlist',
+                    'list': 'PLa9QtNJi2rozod6071zAYIy4X682qzGPO',
+                    'showinfo': 0,
+                    'rel': 0,
+                    'mute': 1,
+                }
+            });
+        }
+    </script>
+
+    <script src="../Pomodoro/pomoScript.js"></script>
+</body>
+
+</html>
